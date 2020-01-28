@@ -1,4 +1,4 @@
-<div style="float: left" data-bind="visible: items">
+<div style="float: left" data-bind="visible: items().length">
     <h3 data-bind="i18n: 'Cart items template'"></h3>
     <ul>
     <!-- ko foreach: items -->
@@ -8,6 +8,6 @@
     <!-- /ko -->
     </ul>
 </div>
-<div style="float: left" data-bind="visible: !items">
+<div style="float: left" data-bind="visible: !items().length">
     <!-- ko i18n: 'There no items in your cart' --><!-- /ko -->
 </div>
