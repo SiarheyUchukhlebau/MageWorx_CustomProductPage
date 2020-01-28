@@ -1,0 +1,13 @@
+<div style="float: left" data-bind="visible: items">
+    <h3 data-bind="i18n: 'Cart items template'"></h3>
+    <ul>
+    <!-- ko foreach: items -->
+        <li>
+            <!-- ko template: 'MageWorx_CustomProductPage/product/item' --><!-- /ko -->
+        </li>
+    <!-- /ko -->
+    </ul>
+</div>
+<div style="float: left" data-bind="visible: !items">
+    <!-- ko i18n: 'There no items in your cart' --><!-- /ko -->
+</div>

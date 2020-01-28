@@ -1,0 +1,17 @@
+<div class="col-md-12" data-bind="scope: 'cart-items-section'" style="padding: 0;" id="cart-items-section">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "cart-items-section": {
+                        "component": "MageWorx_CustomProductPage/js/cart-items"
+                    }
+                }
+            }
+        }
+    }
+</script>
